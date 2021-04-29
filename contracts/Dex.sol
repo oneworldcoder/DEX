@@ -1,10 +1,9 @@
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity >=0.4.22 <0.8.0;
 
-import '../node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol';
-import '../node_modules/@openzeppelin/contracts/access/Ownable.sol';
-import '../node_modules/@openzeppelin/contracts/math/SafeMath.sol';
+import "@openzeppelin/contracts/token/ERC20/utils/ERC20.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-contract Dex is Ownable, IERC20{
-    using SafeMath for uint256;
+Contract Dex is ERC20; SafeMath {
+  using SafeMath for uint256;
 
 }
